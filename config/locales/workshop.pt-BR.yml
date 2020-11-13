@@ -1,5 +1,11 @@
 ---
 pt-BR:
+  admin:
+    workshops:
+      new:
+        submit: 'Salvar Workshop'
+      edit:
+        submit: 'Atualizar Workshop'
   activerecord:
     attributes:
       workshop:

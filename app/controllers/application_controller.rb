@@ -1,11 +1,20 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  before_action :attendee_permitted_parameters, if: :devise_controller?
+
+  # layout :resolve_layout
 
   protected
 
-  def attendee_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
+  def resolve_layout
+    
+    if devise_controller? && resource_name == :user
+      'admin'
+    elsif devise_controller? && resource_name == :attendee
+      'home'
+    else
+      'admin'
+    end
+
   end
 end

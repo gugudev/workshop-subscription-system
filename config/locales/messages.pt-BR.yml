@@ -1,0 +1,6 @@
+---
+pt-BR:
+  messages:
+    notices:
+      successfully_created: '%{model_name} criado com sucesso'
+      successfully_updated: '%{model_name} atualizado com sucesso'

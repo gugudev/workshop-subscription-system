@@ -16,7 +16,8 @@
       <dt><%= I18n.t 'activerecord.attributes.workshop.attendees' %></dt>
       <dd><%= workshop.attendees %></dd>
       <dt><%= t(".table.action") %></dt>
-      <dd><%= link_to t('.edit'), edit_workshop_path(workshop) %></dd>
+      <dd><%= link_to t('.edit'), edit_admin_workshop_path(workshop) %></dd>
+      <dd><%= link_to t('.edit'), edit_admin_workshop_path(workshop) %></dd>
     </dl>
   <% end %>
 
